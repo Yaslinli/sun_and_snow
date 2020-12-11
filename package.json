@@ -1,0 +1,16 @@
+{
+  "name": "sun_and_snow",
+  "version": "1.0.0",
+  "description": "programming project website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "learning",
+    "project"
+  ],
+  "author": "Yaslin Li & Sunjin Kang & Tuyen Nguyen",
+  "license": "ISC"
+}
