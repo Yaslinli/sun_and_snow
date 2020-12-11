@@ -1,0 +1,123 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	background-color: white;
+}
+
+.header_wrap {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.logo_name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+.logonav {
+	width: 4em;
+	height: 4em;
+	margin-right: 1em;
+	margin-left: 2em;
+}
+
+header h1 {
+	font-size: 1em;
+}
+
+nav {
+	display: flex;
+
+}
+
+nav ul {
+	display: flex;
+	margin-right: 2em;
+
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: black;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid;
+	transition-timing-function: ease-in;
+
+	transition: 0.5s;
+
+}
+
+.selectednav {
+	border-bottom: 1px solid;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	padding-top: 4em;
+}
+
+.front_one {
+	width: 300px;
+
+}
+
+#counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* gallerij menu pagina slider*/
+.outer_wrapper {
+	display: flex;
+	max-width: 100%;
+	overflow: scroll;
+}
+
+.outer_wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.scroll_wrapper {
+	display: flex;
+}
+
+.scroll_image {
+	width: 300px;
+	height: 400px;
+	background-image: url(../images/1italy/venice/IMG_0010.jpg);
+	background-size: cover;
+}
+
+/* enable Flickity by default */
+.gallery:after {
+	content: 'flickity';
+	display: none;
+	/* hide :after */
+}
+
+@media screen and (min-width: 768px) {
+
+	/* disable Flickity for large devices */
+	.gallery:after {
+		content: '';
+	}
+}
